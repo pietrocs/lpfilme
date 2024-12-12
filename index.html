@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laranja Mecânica</title>
+
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--ver o icone do font awesome -->
+    <link rel="shortcut icon" href="./assets/faveicon.svg" type="image/svg">
+</head>
+
+<body>
+    <!-- fazer o cabeçalho, onde fica a logo, barra de pesquisa, o menu!-->
+    <!--Class é usado para agrupar elementos com caracteristicas semelhantes. Alt é usado para descrever o conteúdo de uma imagem-->
+    <header>
+        <a href="#" class="logo"><img src="./assets/olho.icone.png"></a>
+        <!--Criar a lista de menus-->
+        <ul class="navigation">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Papel de Parede</a></li>
+            <li><a href="#">Trailer</a></li>
+        </ul>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+  
+        </div>
+    </header>
+
+    <div class="background">
+        <img src="./assets/bg.jpeg" class="bg">
+
+        <div class="content">
+            <img src="./assets/logo-filme.png" class="movieTitle">
+            <h4>
+                <!--<span> é um container genérico. Pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id), ou para compartilhar valores de atributos como lang -ver lang depois-. Deve ser usado só quando nenhum outro elemento semântico for apropriado-->
+                <span>1972</span>
+                <span><i>16+</i></span>
+                <span>2h 16min</span>
+                <span>Crime/Ficção Científica</span>
+            </h4>
+            <p>No futuro, o violento Alex, líder de uma gangue de delinquentes cai nas mãos da polícia. Preso, ele
+                recebe a opção de participar em um programa que pode reduzir o seu tempo na cadeia. Alex vira cobaia de
+                experimentos destinados a refrear os impulsos destrutivos do ser humano, mas acaba se tornando impotente
+                para lidar com a violência que o cerca.</p>
+
+            <div class="buttons">
+                <a href="#"><i class="fas fa-play-circle" aria-hidden="true"></i>Assistir</a>
+                <a href="#"><i class="fas fa-plus" aria-hidden="true"></i>Minha Lista</a>
+            </div>
+        </div>
+    </div>
+    <a class="play" onclick="toggleVideo()"><img src="/assets/icon-play.png">Assista ao Trailer</a>
+    </div>
+    
+    <div class="trailer">
+        <video src="./assets/bg-video.mp4" controls="true"></video>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    </div>
+</body>
+<script src="./src/script.js"></script>
+<script src="https://yagasaki7k.github.io/custom-scripts/font-awesome.js"></script>
+<!--criar meu script do font awesome -->
+
+</html>
